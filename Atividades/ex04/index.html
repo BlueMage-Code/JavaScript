@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro codigo</title>
+    <style>
+        body{
+            background-color: #5E90F2; 
+        }
+        h1{
+            color: white;
+            font:normal 20pt Arial;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const nome = window.prompt("Qual é o seu nome?");
+        //document.write imprime no HTML a mensagem e aceita tags HTML
+        document.write(`<p>Olá ${nome}. Seu nome tem ${nome.length} letras.</p>`);
+        document.write(`<p>Seu nome em maiusculo é ${nome.toUpperCase()}.</p>`);
+        document.write(`<p>Seu nome em minusculo é ${nome.toLowerCase()}.</p>`);
+        //x.toFixed(n) para fixar o numero de casas decimais do numero
+        //x.toFixed(n).replace('.',',') para mudar o marcador de casa decimal
+        //Ex: 5.25 para 5,25
+        //x.toLocaleString('pt-BR , {style: 'currency', currency: 'BRL'}) para ja imprimir com o tipo de marcador mometario
+    </script>
+</body>
+</html>
