@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro codigo</title>
+    <style>
+        body{
+            background-color: #5E90F2; 
+        }
+        h1{
+            color: white;
+            font:normal 20pt Arial;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Já me livrei da maldição</p>
+    
+    <script>
+        //Number.parseInt(x) pega a String e transforma em inteiro
+        //Number.parseFloat(x) transforma em real
+        //Number(x) transforma de acordo com o valor recebido
+        const n1 = Number(window.prompt('Digite um Numero: '));
+        const n2 = Number(window.prompt('Digite outro Numero: '));
+        const s = n1 + n2
+        //string(x) ou x.toString pega um variavel e transforma em uma string
+        window.alert(`A soma dos valores é ${s.toString()}`);
+        //x.length verifica quantidades de caracteres da string
+        //x.toUpperCase() função que trasnforma tudo em letras maiusculas
+        //x.toLowerCase() transforma em letra minuscula
+    </script>
+</body>
+</html>
