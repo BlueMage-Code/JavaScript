@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro codigo</title>
+    <style>
+        body{
+            background-color: #5E90F2; 
+        }
+        h1{
+            color: white;
+            font:normal 20pt Arial;
+            text-align: center;
+        }
+        p{
+            color: white;
+            text-align: center;
+        }
+        .div{
+            color: white;
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+            border: 2px dashed black ;
+            width: 200px;
+        }
+        strong{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <p>Aqui vai o resultado</p>
+    <div class="div">Clique em mim</div>
+    <script>
+        //window.document.getElementsBy... é utilizado para puxar a informação podendo ser de marca, ID, classe, nome ou seletor.
+        //.innerText imprime apenas o texto, .innerHTML imprime as funções junto;
+        //window.document.querySelector('x') forma mais "atual" de usar o getElement;
+        
+    let p1 = window.document.getElementsByTagName('p')[1];
+    p1.innerHTML = "Hola que tal ?"
+    let div = window.document.querySelector('div.div');
+    div.style.background = 'white';
+    div.style.color = 'black';
+    </script>
+</body>
+</html>
