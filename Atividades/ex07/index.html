@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-color: rgb(80, 65, 80);
+        }
+        header{
+            margin: auto;
+            text-align: center;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        div{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 175px;
+            height: 15px;
+            margin: auto;
+        }
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+        }
+
+         
+        input#somar{
+            background-color: rgba(182, 76, 76, 0.472);
+            color: white;
+            width: 75px; 
+            margin-top: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            
+        }
+        div p{
+            width: 165px;
+            height: 15px;
+            padding: 1px 2px;
+            color: black;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.28);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 13px;
+            text-align: start;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Somando Valores</h1>
+        
+            <input type="number" name="txtn1" id="txtn1"><p>+</p>
+            <input type="number" name="txtn2" id="txtn2"><p>=</p>
+            <div><p id="res"></p></div>
+        
+        <input type="button" value="somar" onclick="somar()" id="somar">
+    </header>
+    <script>
+        function somar(){
+            //const n1 = document.getElementById('txtn1')
+            //const n2 = document.getElementById('txtn2')
+            let n1 = document.querySelector('input#txtn1')
+            let n2 = document.querySelector('input#txtn2')
+            let res = document.getElementById('res')
+            n1 = Number(n1.value)
+            n2 = Number(n2.value)
+            let r = n1 + n2
+            res.innerHTML = r
+        }
+    </script>
+</body>
+</html>
