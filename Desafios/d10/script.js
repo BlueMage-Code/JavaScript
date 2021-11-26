@@ -55,7 +55,7 @@ function conta(ladoA,ladoB,ladoC){
 function txt(resultado,equacao2,equacao){
     let txt = document.querySelector('div#inf')
     txt.innerHTML = `<h1>Resolvendo Bhaskara</h1>
-    <p>A equação atual é ${equacao}.</p>
-    <p>O cálculo realizado será 🛆 = ${equacao2}. </p>
-    <p>O calor calculado foi <strong>🛆 = ${resultado}<strong>. </p>`
+    <p>A equação atual é ${equacao}</p>
+    <p>O cálculo realizado será 🛆 = ${equacao2} </p>
+    <p>O calor calculado foi <strong>🛆 = ${resultado}<strong></p>`
 }
